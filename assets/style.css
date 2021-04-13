@@ -1,0 +1,12 @@
+.nav {
+    display: inline;
+}
+
+#intro-image {
+    height: auto;
+    width: 100%;
+}
+
+#contact-us {
+    text-align: left;
+}
