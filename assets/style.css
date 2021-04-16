@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .nav {
     display: inline;
 }
@@ -31,4 +35,40 @@ div#gmap {
 
 .active {
     display: block;
+}
+
+#introduction {
+    background-color: red;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+
+}
+
+#game {
+    background-color: white;
+    color: blue;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+
+}
+
+#about-us {
+    background-color: blue;
+    color: red;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+
+}
+
+#about-you {
+    background-color: red;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+
 }

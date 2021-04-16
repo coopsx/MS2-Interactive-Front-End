@@ -13,21 +13,22 @@
 </head>
 
 <body>
-    <div class="jumbotron container-fluid">
-        <H1>🙉 Monkey Business</H1>
-    </div>
     <nav>
-        <ul class="navbar navbar-default">
-            <ul><a href="introduction">Introduction</a></ul>
-            <ul><a href="Game">Game</a></ul>
-            <ul><a href="About-Us">About Us</a></ul>
-            <ul><a href="About-You">About You</a></ul>
+        <div class="jumbotron container-fluid text-center">
+            <H1>🙈 Monkey Business 🙊</H1>
+            <br>
+            <ul class="navbar navbar-default">
+                <ul><a href="#introduction">Introduction</a></ul>
+                <ul><a href="#game">Game</a></ul>
+                <ul><a href="#about-us">About Us</a></ul>
+                <ul><a href="#about-you">About You</a></ul>
 
-        </ul>
+            </ul>
+        </div>
     </nav>
 
-    <div class="row container-fluid">
-        <div class="col-sm-4">
+    <div class="row container-fluid" id="introduction">
+        <div class="col-sm-8">
             <h2>Introduction Text</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim condimentum commodo. Aenean
                 tempus vitae nulla sed rhoncus. Quisque ac leo nisl. Quisque vitae nibh quis purus tincidunt hendrerit
@@ -36,7 +37,7 @@
                 ultrices cursus. Duis et arcu accumsan, accumsan lectus vel, auctor est. Quisque sed massa quis lorem
                 tempor dignissim sit amet eu ante.</p>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-4">
             <h2>Introduction Image</h2>
             <div>
                 <div class="monkey closed active">🙈</div>
@@ -45,8 +46,8 @@
         </div>
     </div>
 
-    <div class="row container-fluid text-center">
-        <div class="col-sm-12 game">
+    <div class="row container-fluid text-center" id="game">
+        <div class="col-sm-12">
             <h2>Game Area</h2>
             <br>
             <div class="cell" data-cell></div>
@@ -67,7 +68,7 @@
 
     </div>
 
-    <div class="row container-fluid">
+    <div class="row container-fluid" id="about-us">
         <div class="col-sm-6">
             <h2>Contact Form</h2>
             <form onsubmit="return sendMail(this);">
@@ -88,6 +89,8 @@
         </div>
 
     </div>
+
+    <div class="row container-fluid" id="about-you"></div>
 
     <footer>
         <div class="row text-center">
