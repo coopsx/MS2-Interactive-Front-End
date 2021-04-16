@@ -10,3 +10,7 @@
 #contact-us {
     text-align: left;
 }
+
+div#map {
+    min-height: 360px;
+}

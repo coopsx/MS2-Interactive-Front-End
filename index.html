@@ -10,16 +10,6 @@
     <script src="https://kit.fontawesome.com/94a6df5aee.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script type="text.javascript" src="assets/script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_A4GrxlI0GamMZqOoq2zMD");
-            emailjs.send("gmail", "sterling", {
-                name: "Tom",
-                notes: "Game Request"
-            });
-        })();
-    </script>
 </head>
 
 <body>
@@ -93,6 +83,7 @@
         </div>
         <div class="col-sm-6">
             <h2>Google Map</h2>
+            <div id="gmap"></div>
         </div>
 
     </div>
@@ -130,7 +121,23 @@
         </div>
 
     </footer>
-    <script src="assets/sendEmail.js"></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("gmap"), {
+                zoom: 3,
+                center: {
+                    lat: 46.61926,
+                    lng: -33.134766
+                }
+            });
+        }
+    </script>
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfT7CpTlVwwEwYub9F3pr0xfYrDFKiiu4&callback=initMap">
+    </script>
 </body>
 
 </html>
