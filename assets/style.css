@@ -14,3 +14,21 @@
 div#gmap {
     min-height: 360px;
 }
+
+.monkey {
+    font-size: 12rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.closed {
+    display: none;
+}
+
+.open {
+    display: none;
+}
+
+.active {
+    display: block;
+}
