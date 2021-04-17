@@ -72,3 +72,150 @@ div#gmap {
     align-items: center;
 
 }
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #000000;
+    color: #f8f8ff;
+    padding: 30px;
+    margin: 0;
+}
+
+@media (max-width:600px) {
+
+    .footer,
+    .footer h3,
+    .footer-social,
+    .footer-social a,
+    .form-inline,
+    .footer-form,
+    .footer-form button,
+    .footer-sub,
+    .footer-contact {
+        padding-top: 10px;
+
+
+    }
+}
+
+@media (max-width:600px) {
+    .footer h3 {
+        border-top: 2px solid #AD8A56;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-contact a {
+        text-align: left;
+    }
+}
+
+@media (max-width:800px) {
+    .footer-contact a {
+        text-align: left;
+    }
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social a {
+    color: #f8f8ff;
+    letter-spacing: 7.5px;
+    font-size: x-large;
+}
+
+#fbook:hover {
+    color: #4267B2;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+
+#link:hover {
+    color: #2867B2;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+
+#inst:hover {
+    color: #C13584;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+
+#twit:hover {
+    color: #1DA1F2;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+
+#you:hover {
+    color: #FF0000;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+
+.footer-form {
+    display: inline;
+    width: 250px;
+    height: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.footer-contact a {
+    float: left;
+    color: #f8f8ff;
+}
+
+.footer-sub {
+    text-align: center;
+}
+
+.btn-light {
+    background-color: #f8f8ff;
+}
