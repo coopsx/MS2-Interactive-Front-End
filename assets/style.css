@@ -1,3 +1,10 @@
+body {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -43,6 +50,17 @@ div#gmap {
     height: 100vh;
     width: 100vw;
     align-items: center;
+    justify-content: center;
+
+}
+
+#game {
+    background-color: white;
+    color: blue;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -223,8 +241,8 @@ div#gmap {
     padding: 0;
     margin: 0;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 50vh;
     justify-content: center;
     align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
@@ -292,4 +310,75 @@ div#gmap {
 
 .hide {
     display: none;
+}
+
+#news {
+    padding: 50px;
+    margin: 0px;
+    width: 50vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input:hover {
+    height: 25%;
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea:hover {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#submit {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+#submit:hover {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.subscribe {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#form {
+    animation: bounce 1.5s infinite;
 }

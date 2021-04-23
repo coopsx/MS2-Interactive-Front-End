@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94a6df5aee.js" crossorigin="anonymous"></script>
     <title>Document</title>
 
@@ -30,7 +32,7 @@
                     <a class="nav-link" href="#introduction">Introduction</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="game.html">Game</a>
+                    <a class="nav-link" href="#game">Game</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about-us">About Us</a>
@@ -43,45 +45,60 @@
     </nav>
 
     <div class="row container-fluid" id="introduction">
-        <div class="col-sm-8">
-            <h2>Introduction Text</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim condimentum commodo. Aenean
-                tempus vitae nulla sed rhoncus. Quisque ac leo nisl. Quisque vitae nibh quis purus tincidunt hendrerit
-                ultrices eget sem. Donec maximus eu leo a aliquet. Sed luctus in leo at vehicula. Ut eget purus id ante
-                volutpat convallis. Suspendisse a massa vestibulum, scelerisque libero nec, semper orci. Nam consequat
-                ultrices cursus. Duis et arcu accumsan, accumsan lectus vel, auctor est. Quisque sed massa quis lorem
-                tempor dignissim sit amet eu ante.</p>
-        </div>
-        <div class="col-sm-4">
-            <h2>Introduction Image</h2>
-            <div>
-                <div class="monkey closed active">🙈</div>
+        <div class=" col-sm-9 text-center">
+            <h2>Welcome to Monkey Business</h2>
+            <p>Monkey Business is a video game marketing agency, covering mobile, PC, and console gaming. With
+                offices
+                in London & Worcester, they help you plan and execute your marketing campaigns globally.
+                Our team designs tailor-made creative assets, including PC & Mobile Javascript Games. They have a
+                holistic approach to media and operate their marketing campaigns online and offline through PR,
+                influencer marketing, TV advertising, digital advertising, and event.
+                Wework directly with top gaming influencers on Facebook, Instagram, LinkedIn, Twitter, & Youtube to
+                create exciting and targeted content to capture both new and old audiences.
+            </p>
+            <div class="col-sm-3 text-center">
+                <h3>This is our mascot Mizaru, he is shy but try and pet him</h3>
+                <div class=" monkey closed active">🙈</div>
                 <div class="monkey open">🙊</div>
             </div>
         </div>
     </div>
 
-    <div class="game-area" id="game">
-        <div class="container">
-            <div id="question-container" class="hide">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
+
+    <div class="row" id="game">
+        <div class="col-sm-3 jumbotron text-center" id="news">
+            <h2>News of the week quiz</h2>
+            <br>
+            <P>This game is to test your knowledge of this weeks news headlines, click start and see how in the know
+                you
+                are!</P>
+        </div>
+        <div class="col-sm-9 text-center">
+            <div class="game-area">
+                <div class="container">
+                    <div id="question-container" class="hide">
+                        <div id="question">Question</div>
+                        <div id="answer-buttons" class="btn-grid">
+                            <button class="btn">Answer 1</button>
+                            <button class="btn">Answer 2</button>
+                            <button class="btn">Answer 3</button>
+                            <button class="btn">Answer 4</button>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button id="start-btn" class="start-btn btn">Start</button>
+                        <button id="next-btn" class="next-btn btn hide">Next</button>
+                    </div>
                 </div>
-            </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <span id="right-answers"></span>
             </div>
         </div>
-        <span id="right-answers"></span>
     </div>
 
     <div class="row container-fluid" id="about-us">
         <div class="col-sm-6">
+            <h2>Our Work</h2>
+            <p>take a look at our github profile to </p>
             <div class="center-form">
                 <input type="text" id="gh-username" value="coopsx" oninput="fetchGitHubInformation()" />
                 <div id="gh-user-data"></div>
@@ -91,7 +108,14 @@
 
         </div>
         <div class="col-sm-6">
-            <h2>Google Map</h2>
+            <h2>Come & Find us</h2>
+            <i class="fas fa-map-marked-alt"> HQ: 99, Hostel Henwick Road St Johns, Worcester WR2 5NY, United
+                Kingdom</i>
+            <br>
+            <i class="fas fa-map-marked-alt"> Development Office: 12-14 Cotswold St, Norwood, London SE27 0DW,
+                United
+                Kingdom</i>
+
             <div id="gmap"></div>
         </div>
 
@@ -100,24 +124,48 @@
     <div class="row container-fluid" id="about-you">
         <div class="col-sm-12 text-center">
             <h2>Contact Form</h2>
-            <form onsubmit="return sendMail(this);">
-                <label for="text">Name:</label>
-                <input type="text" name="name" placeholder="Curious George">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" name="emailaddress" placeholder="hello@monkeybusiness.co.uk">
-                <br>
-                <textarea name="contact-email" id="" cols="30" rows="10"
-                    placeholder="I would like to develop a interactive marketing game for...."></textarea>
-                <br>
-                <button type="submit">Send</button>
+            <p>If you have any questions or queries about our service please do not hesitate to sent us an email!
+            </p>
+            <div class="col-sm-75">
+
+            </div>
+            <form onsubmit="return sendMail(this);" id="form">
+                <div class="col-sm-12">
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div class="col-sm-12">
+                    <input type="email" name="emailaddress" placeholder="Email">
+                </div>
+                <div class="col-sm-12">
+                    <textarea name="contact-email" id="" cols="30" rows="10"
+                        placeholder="I would like to develop a interactive marketing game for...."></textarea>
+                </div>
+                <div class="col-sm-12">
+                    <button type="submit" id="submit">Send</button>
+                </div>
             </form>
         </div>
     </div>
 
     <footer>
-        <div class="row text-center ">
-            <div class="col-sm-4 container-fluid ">
+        <div class="row">
+            <div class="col-sm-6" id="contact-us">
+                <h3>Contact Us</h3>
+                <dl>
+                    <dt><i class="fas fa-phone-square-alt"></i> Telephone</dt>
+                    <dd><a href="tel:07581059340">0207-123-456</a></dd>
+                    <dt><i class="fas fa-envelope"></i> Email Address</dt>
+                    <dd><a href="mailto:coopsx@googlemail.com">
+                            hello@monkeybusiness.co.uk</a></dd>
+                    <dt><i class="fas fa-map-pin"></i> Office Locations</dt>
+                    <dd><a href="https://goo.gl/maps/8aRUvyR1iezMyH1f6" target="_blank">
+                            HQ: 99, Hostel Henwick Road St Johns, Worcester WR2 5NY, United
+                            Kingdom</a></dd>
+                    <dd><a href="https://goo.gl/maps/jDZQpfD4FvzW9Hc67" target="_blank">
+                            Development Office: 12-14 Cotswold St, Norwood, London SE27 0DW, UK</a></dd>
+                </dl>
+            </div>
+            <div class="col-sm-3">
                 <h3>Follow Us</h3>
                 <a href="https://www.facebook.com" id="fbook" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://www.instagram.com" id="inst" target="_blank"><i
@@ -127,20 +175,10 @@
                 <a href="https://www.youtube.com" id="you" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://github.com/coopsx" id="you" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-
-            <div class="col-sm-4 container-fluid" id="contact-us">
-                <h3>Contact Us</h3>
-                <a href="tel:07581059340"><i class="fas fa-phone-square-alt"></i> 0207-123-456</a>
-                <a href="mailto:coopsx@googlemail.com"> <i class="fas fa-envelope"></i>
-                    hello@thomaspartners.co.uk</a>
-                <a href="https://goo.gl/maps/FK2G9XCNHZvX4fX87" target="_blank"><i class="fas fa-map-pin"></i>
-                    Nexus Place, 25 Farringdon Street, London EC4A 4AF</a>
-
-            </div>
-            <div class="col-sm-4 container-fluid">
+            <div class="col-sm-3">
                 <h3>Subscribe</h3>
-                <input type="email">
-                <button>Subscribe</button>
+                <input type="email" placeholder="Email" class="subscribe">
+                <button class="subscribe">Subscribe</button>
             </div>
         </div>
     </footer>
