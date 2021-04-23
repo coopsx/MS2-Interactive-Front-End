@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94a6df5aee.js" crossorigin="anonymous"></script>
     <title>Document</title>
 
-    <script src="assets/script.js"></script>
-    <script defer src="assets/game.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_A4GrxlI0GamMZqOoq2zMD");
+        })();
+    </script>
+
+    <script defer src="assets/js/game.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/assets/githubinfo.js"></script>
+    <script src="/assets/js/githubinfo.js"></script>
+    <script src="/assets/js/sendEmail.js"></script>
 </head>
 
 <body>
@@ -45,7 +52,7 @@
     </nav>
 
     <div class="row container-fluid" id="introduction">
-        <div class=" col-sm-9 text-center">
+        <div class=" col-sm-6 text-center">
             <h2>Welcome to Monkey Business</h2>
             <p>Monkey Business is a video game marketing agency, covering mobile, PC, and console gaming. With
                 offices
@@ -56,7 +63,7 @@
                 Wework directly with top gaming influencers on Facebook, Instagram, LinkedIn, Twitter, & Youtube to
                 create exciting and targeted content to capture both new and old audiences.
             </p>
-            <div class="col-sm-3 text-center">
+            <div class="col-sm-6 text-center">
                 <h3>This is our mascot Mizaru, he is shy but try and pet him</h3>
                 <div class=" monkey closed active">🙈</div>
                 <div class="monkey open">🙊</div>
@@ -129,7 +136,7 @@
             <div class="col-sm-75">
 
             </div>
-            <form onsubmit="return sendMail(this);" id="form">
+            <form onsubmit="return sendEmail(this);" id="form">
                 <div class="col-sm-12">
                     <input type="text" name="name" placeholder="Name">
                 </div>
@@ -137,7 +144,7 @@
                     <input type="email" name="emailaddress" placeholder="Email">
                 </div>
                 <div class="col-sm-12">
-                    <textarea name="contact-email" cols="30" rows="10"
+                    <textarea name="message" cols="30" rows="10"
                         placeholder="I would like to develop a interactive marketing game for...."></textarea>
                 </div>
                 <div class="col-sm-12">
@@ -182,8 +189,8 @@
             </div>
         </div>
     </footer>
-    <script src="/assets/monkey.js"></script>
-    <script src="/assets/maps.js">
+    <script src="assets/js/monkey.js"></script>
+    <script src="assets/js/maps.js">
     </script>
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">

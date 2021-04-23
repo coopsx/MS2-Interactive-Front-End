@@ -1,3 +1,10 @@
+:root {
+    --red-color: red;
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     position: relative;
@@ -45,7 +52,7 @@ div#gmap {
 }
 
 #introduction {
-    background-color: red;
+    background-color: var(--red-color);
     color: white;
     height: 100vh;
     width: 100vw;
@@ -236,8 +243,6 @@ div#gmap {
 .btn-light {
     background-color: #f8f8ff;
 }
-
-:root {}
 
 .game-area {
     --hue: var(--hue-neutral);
