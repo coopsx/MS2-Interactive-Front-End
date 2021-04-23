@@ -209,6 +209,13 @@ div#gmap {
     transition: 0.3s;
 }
 
+#git:hover {
+    color: black;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+
+
 .footer-form {
     display: inline;
     width: 250px;
@@ -230,11 +237,7 @@ div#gmap {
     background-color: #f8f8ff;
 }
 
-:root {
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-}
+:root {}
 
 .game-area {
     --hue: var(--hue-neutral);
@@ -245,7 +248,7 @@ div#gmap {
     height: 50vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%);
+
 }
 
 .game-area.correct {
@@ -274,8 +277,6 @@ div#gmap {
 
 .btn {
     --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
