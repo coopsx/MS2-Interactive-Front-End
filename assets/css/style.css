@@ -82,7 +82,7 @@ div#gmap {
 }
 
 #about-you {
-    background-color: red;
+    background-image: url("purple.jpg");
     color: white;
     height: 100vh;
     width: 100vw;
@@ -249,10 +249,11 @@ div#gmap {
     padding: 0;
     margin: 0;
     display: flex;
-    width: 50vw;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
 
 }
 
@@ -282,6 +283,8 @@ div#gmap {
 
 .btn {
     --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;

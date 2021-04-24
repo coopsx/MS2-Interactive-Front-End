@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94a6df5aee.js" crossorigin="anonymous"></script>
     <title>Document</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -19,10 +19,7 @@
         })();
     </script>
 
-    <script defer src="assets/js/game.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/assets/js/githubinfo.js"></script>
-    <script src="/assets/js/sendEmail.js"></script>
+
 </head>
 
 <body>
@@ -63,17 +60,17 @@
                 Wework directly with top gaming influencers on Facebook, Instagram, LinkedIn, Twitter, & Youtube to
                 create exciting and targeted content to capture both new and old audiences.
             </p>
-            <div class="col-sm-6 text-center">
-                <h3>This is our mascot Mizaru, he is shy but try and pet him</h3>
-                <div class=" monkey closed active">🙈</div>
-                <div class="monkey open">🙊</div>
-            </div>
+        </div>
+
+        <div class="col-sm-6 text-center">
+            <h3>This is our mascot Mizaru, he is shy but try and pet him</h3>
+            <div class=" monkey closed active">🙈</div>
+            <div class="monkey open">🙊</div>
         </div>
     </div>
 
-
-    <div class="row" id="game">
-        <div class="col-sm-3 jumbotron text-center" id="news">
+    <div class="row">
+        <div class="col-sm-3 jumbotron text-center">
             <h2>News of the week quiz</h2>
             <br>
             <P>This game is to test your knowledge of this weeks news headlines, click start and see how in the know
@@ -102,16 +99,19 @@
         </div>
     </div>
 
+
     <div class="row container-fluid" id="about-us">
-        <div class="col-sm-6">
+        <div class="col-sm-6 jumbotron">
             <h2>Our Work</h2>
-            <p>take a look at our github profile to </p>
+            <p>Check out our completed and in progress projects to get inspired for your project</p>
+
             <div class="center-form">
                 <input type="text" id="gh-username" value="coopsx" oninput="fetchGitHubInformation()" />
                 <div id="gh-user-data"></div>
                 <div id="gh-repo-data"></div>
-
             </div>
+
+
 
         </div>
         <div class="col-sm-6">
@@ -198,6 +198,9 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfT7CpTlVwwEwYub9F3pr0xfYrDFKiiu4&callback=initMap">
     </script>
+    <script defer src="assets/js/game.js"></script>
+    <script src="assets/js/githubinfo.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
