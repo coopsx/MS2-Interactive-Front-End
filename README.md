@@ -106,3 +106,8 @@ A Special thanks to my mentor Nishant Kumar for his continued support, patience 
 Miklos - Code Institute Tutor - for helping me configure my Google Maps API Brian Design - for helping configure my emoji switch (https://www.youtube.com/watch?v=mCQ1-iDSnto)
 Gifer - Loading Circle (https://gifer.com/en/7gQj)
 Kyle - Javascript Quiz Workflow - (https://www.youtube.com/watch?v=riDzcEQbX6k)
+Purple Photo by Scott Webb from Pexels
+Technology Video by Pressmaster from Pexels
+Francesco by Francesco Ungaro from Pexels
+Arcade Photo by Element5 Digital from Pexels
+Water Photo by yudy pirmansah from Pexels

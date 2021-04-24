@@ -52,7 +52,7 @@ div#gmap {
 }
 
 #introduction {
-    background-color: var(--red-color);
+    background-image: url(../images/Arcade.jpg);
     color: white;
     height: 100vh;
     width: 100vw;
@@ -72,7 +72,7 @@ div#gmap {
 }
 
 #about-us {
-    background-color: blue;
+    background-image: url(../images/Francesco.jpg);
     color: red;
     height: 100vh;
     width: 100vw;
@@ -82,11 +82,13 @@ div#gmap {
 }
 
 #about-you {
-    background-image: url("purple.jpg");
-    color: white;
+    background-image: url(../images/purple.jpg);
+    color: black;
     height: 100vh;
     width: 100vw;
     align-items: center;
+    border: teal;
+    border-style: solid;
 
 }
 
@@ -390,4 +392,9 @@ textarea:hover {
 
 #form {
     animation: bounce 1.5s infinite;
+}
+
+#water {
+    background-image: url(../images/water.jpg);
+    color: white;
 }
